@@ -21,6 +21,9 @@ Vengono adoperate alcune librerie, presenti nella cartella lib, per la creazione
 Il progetto è stato testato con Tomcat 10.0, ed è stato utilizzato originalmente come sistema di build Maven.
 Le librerie nella cartella lib devono essere aggiunte nella propria cartella tomcat/lib per far funzionare correttamente il progetto.
 
+Prima di far partire il sito, è necessario avere un'installazione di MySQL in esecuzione: si deve eseguire in essa lo script MondoRexDB.sql, contenuto nella cartella db, che creerà automaticamente il database necessario. Questo passo deve essere eseguito una sola volta.
+Successivamente, bisogna modificare il file DriverManagerConnectionPool con i dati del proprio utente MySQL in modo da accedere correttamente al database. Il file si trova in src/model . 
+
 
 Partendo da un'installazione di Tomcat, il modo più semplice per far funzionare il progetto è quello di scaricare questo progetto come zip, rinominarlo in modo da cambiare l'estensione da .zip a .war.
 Successivamente, copiare il file nella cartella tomcat/webapps.
