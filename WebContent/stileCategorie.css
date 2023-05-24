@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+h1{
+	color: #3D5DA4;
+	margin-left: 3%;
+}
+
+#boxProdotto{
+	margin-left: 45px;
+}
+
+@media screen and (max-width: 600px){
+	h1{
+		text-align: center;
+	}
+}

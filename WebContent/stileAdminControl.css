@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Trebuchet MS', sans-serif;
+	background-color: #F1FCB0;
+	text-align: center;
+}
+
+#assistenza{
+	font-family: inherit;
+	background-color: #3D5DA4;
+	color: white;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+#assistenza:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+.bottone{
+	font-family: inherit;
+	border-radius: 50px;
+	padding: 5px;
+	background-color: #3D5DA4;
+	color: white;
+	box-sizing: border-box;
+}
+
+.bottone:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+#bottoneInvio{
+	font-family: inherit;
+	border-radius: 50px;
+	width: 60px;
+	margin: 8px 0;
+	padding: 5px;
+	background-color: #3D5DA4;
+	color: white;
+	box-sizing: border-box;
+}
+
+#bottoneInvio:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+.Logout{
+	font-family: inherit;
+	border-radius: 50px;
+	width: 60px;
+	margin: 8px 0;
+	padding: 5px;
+	background-color: #3D5DA4;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+	margin-top: 50px;
+}
+
+.Logout:hover{
+	background-color: #FF1F1F;
+	color: white;
+	transition: ease-in-out 0.3s;
+}
+
+select{
+  	font-family: inherit;
+  	font-size: inherit;
+}
+
+hr{
+	background-color: black;
+	padding: 0.5px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+

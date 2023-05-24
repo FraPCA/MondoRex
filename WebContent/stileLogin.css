@@ -1,0 +1,62 @@
+@charset "UTF-8";
+body{
+	font-family: 'Trebuchet MS', sans-serif;
+	background-color: white;
+	background-image: url("img/cani.jpg");
+	background-size: cover;	/*l'immagine copre l'intera finestra*/
+	background-repeat: no-repeat;	/* non ripete l'immagine quando il contenuto va oltre le dimensioni massime dell'immagine*/
+	background-attachment: fixed;	/* fissa l'immagine in modo che anche quando lo schermo cambia, le dimensioni dell'immagine non variano */
+}
+
+h1{
+	text-align: center;
+}
+
+fieldset{
+	border-radius:8px;
+	border-width: 6px;
+	border-color: black;
+	background-color: #F1FCB0;
+}
+
+
+form{
+	margin-left: 30%;
+	margin-right: 30%;
+	opacity: 0.9;
+}
+
+form input[type=text], input[type=password] {
+	font-family: 'Trebuchet MS', sans-serif;
+  	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc; /*Sarebbe 6 volte C */
+  	box-sizing: border-box;
+  	
+}
+
+.bottone{
+	font-family: 'Trebuchet MS', sans-serif;
+	margin-top: 10px;
+	border-radius: 50px;
+	width: 60px;
+	padding: 5px;
+	background-color: #3D5DA4;
+	color: white;
+	text-align: center;
+}
+
+.bottone:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+.errore{
+	color: red;
+	text-align: left;
+	width: 100%;
+	margin-right: 20%;
+}

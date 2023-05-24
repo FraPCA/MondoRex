@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 120px;
+}
+
+#banner{
+	width: 100%;
+	margin: 0;
+	
+}
+
+#brand{
+	width: 80%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#miniCatalogo{
+	margin-left: 14%;
+	margin-right: 5%;
+}
+
+.bottone{
+	background-color: #3D5DA4;
+	color: white;
+	border-radius: 50px;
+	font-family: inherit;
+	padding: 7px;
+	position: relative;
+	bottom: 50px;
+}
+
+.bottone:hover{
+	background-color: #F78E69;;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+#boxProdotto{
+	background-color: white;
+	border-radius: 20px;
+	border-color: #3D5DA4;
+	border-width: 5px;
+	border-style: solid;
+	padding: 5px 10px 5px 10px;
+	float: left;
+	width: 320px;
+	height: 465px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	display: inline;
+}
+
+#boxProdotto .immagineProdotto{
+    width: 150px;
+    height: 150px;
+    position: relative;
+   	top: 5px;
+   	margin-top: 0px;
+   	margin-bottom: 40px;
+}
+
+#boxProdotto:hover{
+	opacity: 0.9;
+	background-color: #D8E2DC;
+	transition: ease-in-out 0.3s;
+}
+
+
+h1{
+    text-align: center;
+}
+
+p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h2{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px){
+	
+	#miniCatalogo{
+		margin-left: 5%;
+	}
+	
+	#boxProdotto{
+		clear: both;
+		height: 340px;
+		width: 400px;
+		text-align: right;
+	}
+	
+	#boxProdotto .immagineProdotto{
+		margin-left: 20px;
+		float: left;
+		position: relative;
+   		top: -170px;
+		
+	}
+	
+	.infoProdotto{
+		margin-left: 50%;
+	}
+	
+}

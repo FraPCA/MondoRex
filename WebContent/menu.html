@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ConsegnaFinaleTSW/stileMenu.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>	<!-- link a jQuery -->
+    <title>Menu</title>
+</head>
+<body>
+    <nav class="navbar">
+    	<div class="brand-title">
+    		 <a href="/ConsegnaFinaleTSW/index.jsp">MondoRex
+                <img src="/ConsegnaFinaleTSW/img/MondoRex1.png" alt="LogoMondoRex">
+             </a>
+    	</div>
+    	<a href="#" class="toggle-button">	<!-- bottone del menù responsive -->
+    		<span class="bar"></span>
+    		<span class="bar"></span>
+    		<span class="bar"></span>
+    	</a>
+    	<div class="navbar-links">
+    		<ul>
+    			<li class="sezCerca">
+   					
+   					<input name='search' id="cerca" type="text" placeholder="Cerca un prodotto" class="form-control">
+   					
+   					<ul class="list-group" id="result"></ul>
+            	
+        		</li>
+    			<li>
+    				<a href="/ConsegnaFinaleTSW/cibo.jsp">Cibo</a>
+    			</li>
+    			<li>
+    				<a href="/ConsegnaFinaleTSW/igieneCura.jsp">Igiene e Cura</a>
+    			</li>
+    			<li>
+    				<a href="/ConsegnaFinaleTSW/accessori.jsp">Accessori</a>
+    			</li>
+    			<li>
+    				<a href="/ConsegnaFinaleTSW/brand.jsp">Brand</a>
+    			</li>
+    			<li>
+    				<a href="/ConsegnaFinaleTSW/Catalogo2.jsp">Catalogo</a>
+    			</li>
+    			<li>
+    				<div id="item" onclick="responsiveSubmenu()">Utente</div>
+    				 <div id="submenu">
+				        <a href="/ConsegnaFinaleTSW/LoginPage.jsp" target="_blank">Accedi</a>
+				        <a href="/ConsegnaFinaleTSW/Register.jsp" target="_blank">Registrati</a>
+				        <a href="/ConsegnaFinaleTSW/UtentePersonale.jsp">Il mio Account</a>
+				        <a href="/ConsegnaFinaleTSW/Logout">Esci dall'Account</a>
+				     </div>
+    			</li>
+    			<li class='elemCart'>
+            		<a class="cart" href="Carrello.jsp">
+                		<img class="cart" src="/ConsegnaFinaleTSW/img/PngItem_5216062.png" alt="carrello">
+            		</a>
+        		</li>
+    		</ul>
+    	</div>
+    </nav>
+    
+    <script>
+    	const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    	const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+    	
+    	//quando clicco "toggle-button" si apre il menù in modalità "mobile"
+    	toggleButton.addEventListener('click', () => {
+    		navbarLinks.classList.toggle('active');
+    	})
+    </script>
+    
+    <script>	
+  		//script jQuery per l'animazione del menu a tendina
+	    $(function() {
+	        $("#item").click(function() {
+	            $("#submenu").slideToggle(500);
+	        });
+	    });
+    </script>
+    
+    <script>
+    	console.log("Barra di ricerca attiva");
+    	$(document).ready(function(){
+    		$('#cerca').keyup(function(){ //quando finisco di scrivere un carattere
+    			$('#result').html(''); //#result ora è vuoto, poi conterrà il suggerimento della ricerca
+    			var searchField = $('#cerca').val();
+    			if(searchField.length != 0) { //bisogna aver inserito almeno un carattere nella barra di ricerca
+    			var expression = new RegExp(searchField, "i");/*fa una RegExp case insensitive ("i") da searchField per 
+    															trovare il prodotto. I prodotti sono i data.json*/
+    			$.getJSON('data.json', function(data){ 		  
+    				$.each(data, function(key, value){
+    					if(value.name.search(expression) != -1){ // -1 vuol dire expression e campo name non coincidono
+    						$('#result').append("<li class='list-group-item'><form class='form-item' action='" +  "PaginaProdotto/" + value.name.replaceAll("\\s", "") +"'" + "method='post'><input type='hidden' name='itemID' value='" + value.code + "'><img src='"+value.image+"' height='40' width='40' class='img-thumbnail'> " + "<span id='spanNomeProd'>"+value.name+ "</span>" + '</li>');
+    					}
+    				})
+    			})
+    		  }
+    		$('#result').on('click', 'li', function(){	//Quando si clicca sulla barra del menu di ricerca, prende il tag <li> contenuto
+    			$(this).children(".form-item").submit(); //Seleziona il form interno ed effettua la POST
+    		});
+    		})
+    	})
+    </script>
+</body>
+</html>

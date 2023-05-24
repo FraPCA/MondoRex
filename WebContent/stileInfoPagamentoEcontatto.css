@@ -1,0 +1,61 @@
+.formscontainer{
+	background-color: #D8E2DC;
+	border-radius: 20px;
+	border-color: #3D5DA4;
+	border-width: 5px;
+	border-style: solid;
+	padding: 20px 20px 400px 20px;
+	width: 70%;
+	height: 700px;
+	display: block;	
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.metodiPagamento{
+	float: right;
+}
+
+.submitButton{
+	float: right;
+	background-color: #3D5DA4;
+	color: white;
+	border-radius: 50px;
+	font-family: inherit;
+	padding: 7px 10px 7px 10px;
+}
+
+.submitButton:hover{
+	background-color: #F78E69;;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+input{
+	font-family: inherit;
+}
+
+.contatto{
+	float:left;
+}
+
+.numcartaSpan{
+	border-left:1px;
+	margin-right:2%;
+	margin-left:9%;
+}
+
+.cvcSpan{
+	margin-right:12%;
+}
+
+@media screen and (max-width: 800px){
+	.formscontainer{	/*NOTA: menù responsive -> togli margin-top, al massimo riduci*/
+		margin-top: 150px;
+		height: 1200px;
+	}
+	.metodiPagamento{
+		float: none;
+	}
+	
+}

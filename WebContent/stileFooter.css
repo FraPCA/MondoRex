@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 120px;
+}
+
+footer{
+    clear: both;    /* evita che il l'elemento footer si disponga in base ad un float */
+    bottom: 0;		/* sta in fondo alla pagina */
+    left: 0;		/* occupo tutta la finestra */
+    right: 0;       /* 	   		 " "      		*/
+    background: #111;
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: #F78E69;
+}
+
+#logoGmail{
+    height: 60px;
+    width: 95px;
+    margin-right: 20px;
+}
+
+footer span{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    footer a{
+        display: block;
+    }
+
+    #logoGmail{
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+h1{
+	text-align: center;
+}
+
+#container{
+	text-align: center;
+}
+
+.brand{
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+	border-style: solid;
+	border-width: 15px;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	border-color: #3D5DA4;
+	background-color: #D8E2DC;
+	margin-bottom: 20px;
+	width: 350px;
+	margin-right: 30px;
+	display: inline-block;
+}

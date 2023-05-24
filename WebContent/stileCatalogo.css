@@ -1,0 +1,97 @@
+body{
+	font-family: inherit;
+	background-color: white;
+}
+
+#titolo{
+	color: #3D5DA4;
+	margin-left: 3%;
+}
+
+#Catalog{
+	margin-left: 4.5%;
+}
+
+#boxProdotto{
+	background-color: white;
+	border-radius: 20px;
+	border-color: #3D5DA4;
+	border-width: 5px;
+	border-style: solid;
+	padding: 5px 10px 5px 10px;
+	float: left;
+	width: 320px;
+	height: 460px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	display: inline;
+}
+
+#boxProdotto:hover{
+	opacity: 0.9;
+	background-color: #D8E2DC;
+	transition: ease-in-out 0.3s;
+}
+
+#boxProdotto .immagineProdotto{
+    width: 150px;
+    height: 150px;
+    position: relative;
+   	top: 5px;
+   	margin-top: 0px;
+   	margin-bottom: 40px;
+}
+
+h4{
+	font-size: 15px;
+}
+
+.bottone{
+	background-color: #3D5DA4;
+	color: white;
+	border-radius: 50px;
+	font-family: inherit;
+	padding: 7px;
+	position: relative;
+	bottom: 50px;
+}
+
+.bottone:hover{
+	background-color: #F78E69;;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 600px){
+	#titolo{
+		margin-top: 10px;
+	}
+	
+	h4{
+		font-size: 15px;
+		margin-left: 50%;
+	}
+	
+	#boxProdotto{
+		clear: both;
+		height: 340px;
+		width: 400px;
+		text-align: right;
+	}
+	
+	#boxProdotto .immagineProdotto{
+		margin-left: 20px;
+		float: left;
+		position: relative; 
+   		top: -170px;
+		
+	}
+	
+	.bottone{
+		float: right;
+		margin-top: 40px;
+		bottom: 85px;
+	}
+	
+}

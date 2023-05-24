@@ -1,0 +1,53 @@
+h1, h2, h3{
+	text-align: center;
+	color: #3D5DA4;
+}
+
+p{
+	
+	text-align: center;
+}
+
+#mainText {
+	border: 20px solid transparent;
+  	padding: 15px;
+	border-image: url(border.png) 30 round;
+}
+	
+body{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: #F1FCB0;
+}
+
+
+ 	#mainText {
+	border: 20px solid transparent;
+  	padding: 15px;
+	border-image: url(border.png) 30 round;
+	
+}
+	
+ 	
+ 	h1, h2, h3{
+ 		padding-left: 0%;
+ 	}
+ 	
+	
+	
+ 
+  @media only screen and (min-width: 1200px){
+
+	#mainText {
+	border: 20px solid transparent;
+  	padding: 15px;
+	border-image: url(border.png) 30 round;
+	
+}
+
+ 	
+ 	h1, h2, h3{
+ 		padding-left: 0%;
+ 	}
+
+ }
+

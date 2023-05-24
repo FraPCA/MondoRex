@@ -1,0 +1,146 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#containerOrdini{
+	text-align: center;
+}
+
+.containerBottone{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.bottoneK{
+	font-family: inherit;
+	background-color: #3D5DA4;
+	color: white;
+	padding: 10px 5px 10px 5px;
+	border-radius: 20px;
+}
+
+.bottoneK:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.2s;
+}
+
+#benvenuto{
+	text-align: center;
+}
+
+h2{
+	margin-left: 2%;
+	color: black;
+	margin-top: 50px;
+}
+
+h3{
+	color: #3D5DA4;
+	margin-left: 2%;
+	font-size: 25px;
+}
+
+p{
+	font-size: 20px;
+	color: black;
+}
+
+label{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input{
+	width: 50%;
+	padding: 12px 20px;
+	font-family: inherit;
+	border: 2px solid black;
+  	box-sizing: border-box;
+}
+
+.submitButton{
+	font-family: inherit;
+	background-color: #3D5DA4;
+	color: white;
+	padding: 10px 15px 10px 15px;
+	border-radius: 20px;
+}
+
+.submitButton:hover{
+	background-color: #33D73B;
+	color: black;
+	transition: ease-in-out 0.2s;
+}
+
+form{
+	margin-bottom: 0px;
+}
+
+.bottoneUtente{
+	font-family: inherit;
+	background-color: #3D5DA4;
+	color: white;
+	padding: 10px 15px 10px 15px;
+	border-radius: 20px;
+	margin-left: 20px;
+}
+
+.bottoneUtente:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.2s;
+}
+
+#bottoneHome{
+	font-family: inherit;
+	background-color: #3D5DA4;
+	color: white;
+	padding: 10px 15px 10px 15px;
+	border-radius: 20px;
+}
+
+a #bottoneHome{
+	text-decoration: none;
+}
+
+#bottoneHome:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.2s;
+}
+
+.bottoneRimuovi{
+	font-family: inherit;
+	background-color: #3D5DA4;
+	color: white;
+	padding: 10px 5px 10px 5px;
+	border-radius: 20px;
+}
+
+.bottoneRimuovi:hover{
+	background-color: #FF1F1F;
+	transition: ease-in-out 0.2s;
+}
+
+#divBottoni{
+	text-align: center;
+}
+
+#divBottoneHome{
+	text-align: center;
+}
+
+@media screen and (max-width: 800px){
+	.bottoneUtente{
+		display: block;
+		margin-top: 5px;
+	}
+	
+	.containerBottone{
+		text-align: center;
+	}
+	
+}

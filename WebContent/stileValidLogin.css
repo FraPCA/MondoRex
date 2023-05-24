@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+.Logout{
+	font-family: 'Trebuchet MS', sans-serif;
+	border-radius: 50px;
+	width: 60px;
+	margin: 8px 0;
+	padding: 5px;
+	background-color: #3D5DA4;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.Logout:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.3s;
+	
+}
+
+a button{
+	font-family: 'Trebuchet MS', sans-serif;
+	border-radius: 50px;
+	width: 120px;
+	padding: 5px;
+	background-color: #3D5DA4;
+	color: white;
+	text-align: center;
+}
+
+a button:hover{
+	background-color: #F78E69;
+	color: black;
+	transition: ease-in-out 0.3s;
+}

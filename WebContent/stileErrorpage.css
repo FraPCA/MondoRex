@@ -1,0 +1,47 @@
+.pictureAndText{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text{
+	text-align: center;
+}
+
+.picture{
+	text-align: center;
+}
+
+.errormsg{
+	text-align: center;	
+}
+
+.errorvalue{
+	text-align: center;
+}
+
+button{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    color: white;
+    background-color: #3D5DA4;
+	border-radius: 50px;
+	font-family: inherit;
+	padding: 10px;
+}
+
+button:hover{
+	background-color: #F78E69;;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+	.pictureAndText{
+		margin-top: 400px;	/* NOTA: questo margine, così come altri verrà tolto quando il menù sarà totalmente responsive*/		
+	}
+}

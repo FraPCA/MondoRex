@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+body{
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+h2{
+	margin-left: 5%;
+}
+
+.prodotto{
+	height: 270px;
+	width: 270px;
+	margin-right: 20%;
+	padding-bottom: 30px;
+}
+
+.boxInfo{
+	width: 50%;
+	position: relative;
+	padding: 20px;
+	margin-left: 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.boxInfo .prodotto{
+	float: left;
+}
+
+.boxInfo .inputNum{
+	width: 7%;
+	padding: 3px;
+	text-align: center;
+}
+
+.bottone{
+	display: inline;
+	margin-left: 2%;
+	background-color: #3D5DA4;
+	color: white;
+	border-radius: 50px;
+	font-family: inherit;
+	padding: 3px;
+}
+
+.bottone:hover{
+	background-color: #F78E69;;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+hr{
+	width: 90%;
+	background-color: black;
+	padding: 0.8px;
+	border: none;
+}
+
+#tot{
+	text-align: right;
+	margin-right: 5%;
+	color: #33D73B;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#bottomBox{
+	text-align: right;
+	margin-right: 5%;
+}
+
+.bottone2{
+	background-color: #3D5DA4;
+	color: white;
+	border-radius: 50px;
+	font-family: inherit;
+	padding: 7px;
+}
+
+.bottone2:hover{
+	background-color: #F78E69;;
+	color: black;
+	transition: ease-in-out 0.3s;
+}
+
+#carrelloVuoto h3{
+	text-align: center;
+	color: #FF1F1F;
+}
+
+#carrelloVuoto p{
+	text-align: center;
+	margin-bottom: 200px;
+}
+
+@media screen and (max-width: 800px){
+	h2{
+		margin-top: 100px;
+	}
+	
+	.prodotto{
+		display: block;
+ 		margin-left: auto;
+  		margin-right: auto;
+  		height: 200px;
+  		width: 200px;
+  		margin-right: 3%;
+	}
+	
+	.boxInfo{
+		width: 70%;
+		margin-right: none;
+	}
+	
+	.boxInfo .inputNum{
+		width: 50px;
+		margin-right: 2%;
+	}
+	
+	.bottone{
+		float: right;
+		position: relative;
+		left: 70px;
+		bottom: 25px;
+		
+	}
+	
+}
