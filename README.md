@@ -27,4 +27,4 @@ Successivamente, bisogna modificare il file DriverManagerConnectionPool con i da
 
 Partendo da un'installazione di Tomcat, il modo più semplice per far funzionare il progetto è quello di scaricare questo progetto come zip, rinominarlo in modo da cambiare l'estensione da .zip a .war.
 Successivamente, copiare il file nella cartella tomcat/webapps.
-A questo punto, è sufficiente avviare il server, aprire il proprio browser ed inserire nella barra url: localhost:MondoRex
+A questo punto, è sufficiente avviare il server, aprire il proprio browser ed inserire nella barra url: localhost:8080/MondoRex
