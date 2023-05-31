@@ -1,10 +1,26 @@
 # MondoRex    <img src="https://github.com/FraPCA/MondoRex/assets/106353047/f4d06705-483a-4273-864f-d7adb3541b3c" width = "64" height = "64"/> 
-Sito E-Commerce di prodotti per cani.
-
-Progetto di gruppo realizzato per il corso universitario di Tecnologie Software per il Web.
-
-
+<p align = "center">
+    🐶 Sito E-Commerce di prodotti per cani. 🐶 
+  <br>
+  
+  <br>
+  Progetto di gruppo realizzato per il corso universitario di Tecnologie Software per il Web. 
+  <br>
+  facoltà di Computer Science all' Università degli Studi di Salerno.
+</p>
+<br>
 Migrato dalla repository FraPCATempTSW per motivi di consegna.
+
+## Authors
+
+* **Francesco Maria Puca**        - [FraPCA](https://github.com/FraPCA)
+* **Andrea Bucci**                - [VanniMaceria](https://github.com/VanniMaceria)
+* **Nicola Modugno**              - [nicolamoothreemodugno](https://github.com/nicolamoothreemodugno)
+
+# Informazioni tecniche
+
+In questa sezione introduciamo alcune informazioni tecniche e la guida all'installazione!
+
 # Tech stack
 
 
